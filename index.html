@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firewatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <img src="./imgs/parallax0@2x.png" alt="" class="zero">
+    <img src="./imgs/parallax1@2x.png" alt="" class="one">
+    <img src="./imgs/parallax2@2x.png" alt="" class="two">
+    <img src="./imgs/parallax3@2x.png" alt="" class="three">
+    <img src="./imgs/parallax4@2x.png" alt="" class="four">
+    <img src="./imgs/parallax5@2x.png" alt="" class="five">
+    <img src="./imgs/parallax6@2x.png" alt="" class="six">
+    <img src="./imgs/parallax7@2x.png" alt="" class="seven">
+    <img src="./imgs/parallax8@2x.png" alt="" class="eight">
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    jQuery(function() {
+
+        $(window).scroll(function(){
+            const zero  = document.querySelector(".zero");
+            const one   = document.querySelector(".one");
+            const two   = document.querySelector(".two");
+            const three = document.querySelector(".three");
+            const four  = document.querySelector(".four");
+            const five  = document.querySelector(".five");
+            const six   = document.querySelector(".six");
+            const seven = document.querySelector(".seven");
+            const eight = document.querySelector(".eight");
+            const bottom = document.querySelector("#bottom");
+
+            let top = $(window).scrollTop();
+            const base = -.25;
+           zero.style.transform = `translate(0px, ${top * -.15}px`
+           one.style.transform = `translate(0px, ${top *  -.25}px`
+           two.style.transform = `translate(0px, ${top *  -.35}px`
+           three.style.transform = `translate(0px, ${top * -.45}px`
+           four.style.transform = `translate(0px, ${top * -.55}px`
+           five.style.transform = `translate(0px, ${top * -.65}px`
+           six.style.transform = `translate(0px, ${top * -.75}px`
+           seven.style.transform = `translate(0px, ${top * -.85}px`
+           eight.style.transform = `translate(0px, ${top * -1.5}px`
+
+            console.log(top)
+        })
+
+    })
+    </script>
+
+</body>
+</html>

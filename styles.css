@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+html {
+    height:150vh;
+    background: #210002;
+    margin-top: 50px;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+
+}
+
+ img{
+     position: absolute;
+    max-width: 100%;
+}
+
